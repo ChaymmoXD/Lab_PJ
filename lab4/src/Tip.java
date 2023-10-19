@@ -1,0 +1,4 @@
+public enum Tip
+{
+    IMPRIMANTA,COPIATOR,SISTEMCALCUL
+}
