@@ -20,6 +20,8 @@ public class Main
         scriere(angajati);
 
         angajati.forEach(System.out::println);
+        angajati.stream().filter(a->a.getSalariul()>2500f).forEach(System.out::println);
+
     }
 
     public static void scriere(List<Angajat> lista) {
