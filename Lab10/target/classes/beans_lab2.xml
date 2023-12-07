@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Tir cu injectare prin adnotări -->
+    <bean id="tir" class="problema2lab.Tir">
+        <property name="marca" value="Volvo" />
+        <property name="pret" value="80000" />
+        <property name="incarcatura_maxima" value="20000" />
+    </bean>
+</beans>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- a. Autoturism cu injectare prin setter -->
+    <bean id="autoturism1" class="problema2lab.Autoturism">
+    <property name="marca" value="BMW" />
+    <property name="pret" value="50000" />
+    <property name="volum" value="500" />
+    <property name="greutate" value="1500" />
+    </bean>
+
+        <!-- b. Autoturism cu injectare prin constructor -->
+    <bean id="autoturism2" class="problema2lab.Autoturism">
+    <constructor-arg value="Audi" />
+    <constructor-arg value="60000" />
+    <constructor-arg value="600" />
+    <constructor-arg value="1600" />
+    </bean>
+
+        <!-- c. Vehicul și Motocicleta cu injectare prin constructor -->
+    <bean id="motocicleta" class="problema2lab.Motocicleta">
+    <constructor-arg value="Honda" />
+    <constructor-arg value="12000" />
+    <constructor-arg value="200" />
+     </bean>
+
+    <bean id="vehicul" class="problema2lab.Vehicul">
+    <property name="marca" value="Generic" />
+    <property name="pret" value="10000" />
+    </bean>
+</beans>
